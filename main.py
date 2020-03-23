@@ -19,9 +19,11 @@ def enc(x):
 		r[s[i]]=table[x//58**i%58]
 	return ''.join(r)
 
-print(dec('BV17x411w7KC'))
-print(dec('BV1Q541167Qg'))
-print(dec('BV1mK4y1C7Bz'))
-print(enc(170001))
-print(enc(455017605))
-print(enc(882584971))
+#print(dec('BV17x411w7KC'))
+#print(dec('BV1Q541167Qg'))
+#print(dec('BV1mK4y1C7Bz'))
+#print(enc(170001))
+#print(enc(455017605))
+#print(enc(882584971))
+print('av'+str(dec(input())))
+#print(enc(input()))
