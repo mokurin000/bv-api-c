@@ -50,7 +50,7 @@ int main(void) {
 			printf("%s\n",enc(num));
 		} else {
 			scanf("%s",p);
-			printf("%I64d\n",dec(p));
+			printf("av%I64d\n",dec(p));
 			p[0] = 0;
 		}
 	}

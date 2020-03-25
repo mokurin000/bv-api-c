@@ -58,7 +58,7 @@ int main(void) {
 		case 1:
 			while (!feof(stdin)) {
 				scanf("%s",p);
-				printf("%I64d\n",dec(p));
+				printf("av%I64d\n",dec(p));
 				p[0] = 0;
 			}
 			break;
