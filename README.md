@@ -4,7 +4,7 @@
 
 ![https://img.shields.io/github/v/release/poly000/BV_codec.svg](https://github.com/poly000/BV_codec/releases)
 
-emmm _main和main是两个版本
+emmm \_main和main是两个版本
 
 * [_main.c 适用于大量转换（速度更快）。](_main.c)
 
@@ -25,7 +25,9 @@ av106会被 main.c 识别为BV号（
 
 _[inputfile](inputfile)_ 是一个输入文件示例
 
-注：结尾不要有空白，懒得改了。
+注：结尾不要有空白，因为觉得加个scanf()和ungetc()很影响效率。
+
+否则最后一个BV号/av号会重复打印。（\_main.c）
 
 可以在cmd执行 ```main.exe < inputfile > outputfile``` 以进行批量操作，
 
