@@ -2,7 +2,7 @@
 
 [原文地址](https://www.zhihu.com/question/381784377/answer/1099438784)
 
-[![GitHub release](https://img.shields.io/github/release/poly000/BV_codec.svg)](releases)
+[![GitHub release](https://img.shields.io/github/release/poly000/BV_codec.svg)](https://github.com/poly000/BV_codec/releases)
 [![LICENSE](https://img.shields.io/github/license/poly000/BV_codec)](LICENSE)
 
 emmm \_main和main是两个版本
