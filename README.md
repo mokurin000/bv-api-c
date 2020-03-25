@@ -2,7 +2,7 @@
 
 [原文地址](https://www.zhihu.com/question/381784377/answer/1099438784)
 
-[![GitHub release](https://img.shields.io/github/v/release/poly000/BV_codec.svg)]()
+![https://img.shields.io/github/v/release/poly000/BV_codec.svg](https://github.com/poly000/BV_codec/releases)
 
 emmm _main和main是两个版本
 
@@ -14,9 +14,9 @@ emmm _main和main是两个版本
 
 # 使用方法：
 
-* 输入av号时使用阿拉伯数字，例如：314，106
+* 输入av号时请使用阿拉伯数字，例如：314，106
 
-* 输入BV号时直接输入，例如：BV1xx411c7XW，BV1xx411c7mu
+* 输入BV号时请直接输入，例如：BV1xx411c7XW，BV1xx411c7mu
 
 
 
