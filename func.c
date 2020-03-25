@@ -5,8 +5,8 @@ static long long tr[256] = {0};
 
 static char r[] = "BV          ";
 static long long s[] = {11,10,3,8,4,6,2,9,5,7};
-static long long xor = 177451812LL;
-static long long add = 100618342136696320LL;
+static register long long xor = 177451812LL;
+static register long long add = 100618342136696320LL;
 
 void bvInitialize(void) {
 	for (register unsigned int i=0; i<58; i++) {
