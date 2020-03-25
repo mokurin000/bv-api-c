@@ -12,16 +12,16 @@ int main(void) {
 	bvInitialize();
 	
 	while (stat = scanf("%I64d", &num), true) {
+		if (feof(stdin)) {
+			break;
+		}
+		
 		if (stat) {
 			printf("%s\n",bvEnc(num));
 		} else {
 			scanf("%s",p);
 			printf("av%I64d\n",bvDec(p));
 			p[0] = 0;
-		}
-		
-		if (feof(stdin)) {
-			break;
 		}
 	}
 	return stat;
