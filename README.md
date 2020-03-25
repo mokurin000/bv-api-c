@@ -21,3 +21,12 @@ emmm _main和main是两个版本
 
 
 av106会被 main.c 识别为BV号（
+
+
+_[inputfile](inputfile)_ 是一个输入文件示例
+
+可以在cmd执行 ```main.exe < inputfile > outputfile``` 以进行批量操作，
+
+或者 ```_main.exe < inputfile0 > outputfile```（av转BV），
+
+```_main.exe < inputfile1 > outputfile```（BV转av）
