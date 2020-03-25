@@ -21,7 +21,7 @@ inline static long long llPow(long long x, unsigned int a) {
 long long dec(char x[]) {
 	register long long r = 0;
 	for (register unsigned int i=0; i<10; i++) {
-		r += tr[(size_t)x[s[i]]]*llPow(58,i);
+		r += tr[x[s[i]]]*llPow(58,i);
 	}
 	return (r-add)^xor;
 }
@@ -35,24 +35,37 @@ char * enc(long long x) {
 }
 
 int main(void) {
-	register int stat;
+	int stat;
 	long long num;
 	char p[13] = {0};
 	
 	//初始化
 	for (register unsigned int i=0; i<58; i++) {
-		tr[(size_t)table[i]] = i;
+		tr[table[i]] = i;
 	}
 	
+	fprintf(stderr,
+	"0 enc 1 dec\n");
+	scanf("%d",&stat);
 	
-	while (stat = scanf("%I64d", &num), true) {
-		if (stat) {
-			printf("%s\n",enc(num));
-		} else {
-			scanf("%s",p);
-			printf("%I64d\n",dec(p));
-			p[0] = 0;
-		}
-	}
+	switch (stat) {
+		case 0:
+			while (!feof(stdin)) {
+				scanf("%I64d",&num);
+				printf("%s\n",enc(num));
+			}
+			break;
+		case 1:
+			while (!feof(stdin)) {
+				scanf("%s",p);
+				printf("%I64d\n",dec(p));
+				p[0] = 0;
+			}
+			break;
+		default:
+			return stat;
+			break;
+	};
+	
 	return stat;
 }
