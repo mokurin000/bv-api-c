@@ -1,15 +1,17 @@
 #include <stdio.h>
+#include <gmp.h>
+// WIP
 
 char table[] = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF";
 long long tr[256] = {0};
 
 long long s[] = {11,10,3,8,4,6,2,9,5,7};
-long long xor = 177451812;
-long long add = 100618342136696320L;
+long long xor = 177451812L;
+long long add = 100618342136696320LL;
 
-inline static long long llPow(long long x, unsigned int a) {
+inline static __int128 llPow(long long x, unsigned int a) {
 	register unsigned int aa = a;
-	register long long s = 1;
+	register __int128 s = 1;
 	for (register unsigned int i=0; i<aa; i++) {
 		s *= x;
 	}
@@ -17,9 +19,9 @@ inline static long long llPow(long long x, unsigned int a) {
 }
 
 long long dec(char x[]) {
-	register long long r = 0;
+	register __int128 r = 0;
 	for (register unsigned int i=0; i<10; i++) {
-		r += llPow(tr[x[s[i]]]*58,i);
+		r += llPow((long long)tr[x[s[i]]]*58,i);
 	}
 	return (r-add)^xor;
 }
@@ -30,7 +32,8 @@ int main(void) {
 	}
 	char p[13] = {0};
 	scanf("%s",p);
-	printf("%I64d",dec(p));
+	printf("%I64d\n",dec(p));
+	printf("%d\n",sizeof(__int128));
 	return 0;
 }
 
