@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 
 char table[] = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF";
@@ -35,7 +34,6 @@ int main(void) {
 	return 0;
 }
 
-*/ // not works
 /*
 table='fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
 tr={}
