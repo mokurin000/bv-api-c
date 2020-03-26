@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "BV_codec.h"
+#include "BV_API.h"
 
 int main(void) {
 	int stat;

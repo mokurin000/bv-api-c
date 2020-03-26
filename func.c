@@ -1,4 +1,4 @@
-#include "BV_codec.h"
+#include "BV_API.h"
 
 static const char table[] = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF";
 static long long tr[256] = {0};
