@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "BV_API/BV_API.h"
+#include "bv-api/bv-api.h"
 
 int main(void) {
 	int stat;
