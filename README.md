@@ -25,14 +25,14 @@ emmm \_main和main是两个版本
 av106会被 main.c 识别为BV号（
 
 
-_[inputfile](inputfile)_ ， _[inputfile0](inputfile0)_ ， _[inputfile1](inputfile1)_ 是输入文件示例
+_[inputfile](example/inputfile)_ ， _[inputfile0](example/inputfile0)_ ， _[inputfile1](example/inputfile1)_ 是输入文件示例
 
 注：结尾不要有空白，因为觉得加个scanf()和ungetc()很影响效率。
 
 否则最后一个BV号/av号会重复打印。（\_main.c）
 
-可以在cmd执行 ```main.exe < inputfile > outputfile``` 以进行批量操作，
+可以在cmd执行 ```main.exe < inputfile的路径 > 输出文件的路径``` 以进行批量操作，
 
-或者 ```_main.exe < inputfile0 > outputfile```（av转BV），
+或者 ```_main.exe < inputfile0的路径 > 输出文件的路径```（av转BV），
 
-```_main.exe < inputfile1 > outputfile```（BV转av）
+```_main.exe < inputfile1的路径 > 输出文件的路径```（BV转av）
