@@ -24,7 +24,6 @@ __[原文地址](https://www.zhihu.com/question/381784377/answer/1099438784)__
 
 av106会被 main.c 识别为BV号（
 
-
 _[inputfile](example/inputfile)_ ， _[inputfile0](example/inputfile0)_ ， _[inputfile1](example/inputfile1)_ 是输入文件示例
 
 注：结尾不要有空白，因为觉得加个scanf()和ungetc()很影响效率。
