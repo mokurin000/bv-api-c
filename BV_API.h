@@ -1,7 +1,7 @@
-#ifndef BV_CODEC
+#ifndef _BV_API
 
 
-#define BV_CODEC
+#define _BV_API
 
 #include <stdio.h>
 
