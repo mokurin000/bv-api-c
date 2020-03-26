@@ -26,7 +26,9 @@ av106会被 main.c 识别为BV号（
 
 _[inputfile](example/inputfile)_ ， _[inputfile0](example/inputfile0)_ ， _[inputfile1](example/inputfile1)_ 是输入文件示例
 
-否则最后一个BV号/av号会重复打印。（\_main.c）
+请勿在使用\_main.c时为输入文件添加空行，
+
+否则最后一个BV号/av号会重复打印。
 
 可以在cmd执行 ```main.exe < inputfile的路径 > 输出文件的路径``` 以进行批量操作，
 
