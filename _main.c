@@ -18,6 +18,8 @@ int main(void) {
 			while (!feof(stdin)) {
 				scanf("%I64d",&num);
 				printf("%s\n",bvEnc(num));
+				while(getchar() != '\n')
+					continue;
 			}
 			break;
 		case 1:
@@ -25,6 +27,8 @@ int main(void) {
 				scanf("%s",p);
 				printf("av%I64d\n",bvDec(p));
 				p[0] = 0;
+				while(getchar() != '\n')
+					continue;
 			}
 			break;
 		default:
