@@ -25,7 +25,7 @@ emmm \_main和main是两个版本
 av106会被 main.c 识别为BV号（
 
 
-_[inputfile](inputfile)_ 是一个输入文件示例
+_[inputfile](inputfile)_ ， _[inputfile0](inputfile0)_ ， _[inputfile1](inputfile1)_ 是输入文件示例
 
 注：结尾不要有空白，因为觉得加个scanf()和ungetc()很影响效率。
 
