@@ -26,7 +26,7 @@ inline static long long bvllPow(long long x, unsigned int a) {
 long long bvDec(char x[]) {
 	register long long r = 0;
 	for (register unsigned int i=0; i<10; i++) {
-		r += tr[x[s[i]]]*bvllPow(58,i);
+		r += tr[(size_t)x[s[i]]]*bvllPow(58,i);
 	}
 	return (r-add)^xor;
 }
