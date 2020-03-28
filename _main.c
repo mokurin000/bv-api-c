@@ -9,7 +9,7 @@ int main(int argc,char *argv[]) {
 	_Bool file = 0;
 	if (argc == 2) {
 		register char * const q;
-		register const char * const p = argv[1];
+		register const char * p = argv[1];
 		if (!strcmp("-h", p) || !strcmp("--help", p)) {
 			fprintf(stderr,
 				"-h, --help\tshow this help.\n"
