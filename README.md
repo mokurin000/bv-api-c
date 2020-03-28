@@ -35,3 +35,5 @@ _[inputfile](example/inputfile)_ ， _[inputfile0](example/inputfile0)_ ， _[in
 或者 ```_main.exe < inputfile0的路径 > 输出文件的路径```（av转BV），
 
 ```_main.exe < inputfile1的路径 > 输出文件的路径```（BV转av）
+
+现在，你也可以将对应文件格式的文件拖进去。
