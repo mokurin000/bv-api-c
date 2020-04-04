@@ -3,7 +3,7 @@
 
 #define _BV_API
 
-#include <stdio.h>
+#include <stddef.h>
 
 void bvInitialize(void);
 // 初始化BV_codec。
