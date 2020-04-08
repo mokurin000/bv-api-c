@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "bv-api.h"
 
 static const char table[] = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF";
@@ -27,7 +26,7 @@ inline static int64_t bvi64Pow(int64_t x, unsigned int a) {
 int64_t bvDec(char x[]) {
 	register int64_t r = 0;
 	for (register unsigned int i=0; i<10; i++) {
-		r += tr[(size_t)x[s[i]]]*bvi64Pow(58,i);
+		r += tr[(size_t)x[s[i]]*bvi64Pow(58,i)];
 	}
 	return (r-add)^xor;
 }

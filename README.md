@@ -8,13 +8,13 @@ __[原文地址](https://www.zhihu.com/question/381784377/answer/1099438784)__
 
 \_main和main是两个版本
 
-* [_main.c 适用于大量转换（速度更快）。](_main.c)
+* [\_main.c 适用于大量转换（速度更快）。](_main.c)
 
 * [main.c 更灵活。](main.c)
 
 感谢雪炭对我的指导（我把优先级搞错了……）
 
-# 使用方法（_main和main）
+# 使用方法（\_main和main）
 
 * 输入av号时请使用阿拉伯数字，例如：314，106
 
