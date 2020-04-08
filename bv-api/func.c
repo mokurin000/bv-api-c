@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "bv-api.h"
 
 static const char table[] = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF";
