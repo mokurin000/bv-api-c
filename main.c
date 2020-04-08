@@ -1,14 +1,14 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
+#include <inttypes.h>
 
 #include "bv-api/bv-api.h"
 
-#define true 1
-
 int main(int argc,char *argv[]) {
 	register FILE * fi, * fo, * fe;
-	_Bool file = 0;
+	bool file = false;
 	if (argc == 2) {
 		register char * q;
 		register const char * const p = argv[1];
@@ -16,6 +16,8 @@ int main(int argc,char *argv[]) {
 			fprintf(stderr,
 				"-h, --help\tshow this help.\n"
 				"[filename]\tconvert the file and write into [filename].txt .\n"
+				"\n"
+				"WARNING: this Program will overwrite ./latest.log!\n"
 				"\n"
 			);
 			return 0;
@@ -62,7 +64,7 @@ int main(int argc,char *argv[]) {
 						fclose(fo);
 						return 0;
 					} else {
-						file = 1;
+						file = true;
 					}
 				}
 			}
@@ -71,12 +73,12 @@ int main(int argc,char *argv[]) {
 	}
 
 	register int stat;
-	long long num;
+	int64_t num;
 	char p[13] = {0};
 	
 	bvInitialize();
 	
-	while (stat = scanf("%I64d", &num), true) {
+	while (stat = scanf("%" SCNd64, &num), true) {
 		if (feof(stdin)) {
 			break;
 		}
@@ -85,7 +87,7 @@ int main(int argc,char *argv[]) {
 			printf("%s\n",bvEnc(num));
 		} else {
 			scanf("%s",p);
-			printf("av%I64d\n",bvDec(p));
+			printf("av%" PRId64 "\n",bvDec(p));
 			p[0] = 0;
 		}
 	}
