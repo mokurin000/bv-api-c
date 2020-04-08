@@ -26,7 +26,7 @@ int main(int argc,char *argv[]) {
 			q = malloc((len+4)*sizeof(char));
 			if (!q) {
 				fprintf(stderr,
-					"Error while mallocing memory!\n"
+					"Error while eating memory!\n"
 					"\n"
 				);
 				return 0;
