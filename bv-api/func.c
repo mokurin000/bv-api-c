@@ -1,4 +1,5 @@
 #include "bv-api.h"
+#include <stddef.h>
 
 static const char table[] = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF";
 static int64_t tr[256] = {0};
