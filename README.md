@@ -3,8 +3,10 @@
 __[原文地址](https://www.zhihu.com/question/381784377/answer/1099438784)__
 
 [![GitHub release](https://img.shields.io/github/release/poly000/bv-api-c.svg)](https://github.com/poly000/bv-api-c/releases)
+
 [![CodeFactor](https://www.codefactor.io/repository/github/poly000/bv-api-c/badge)](https://www.codefactor.io/repository/github/poly000/bv_codec)
-[![LICENSE](https://img.shields.io/github/license/poly000/bv-api-c)](LICENSE)
+
+[![LICENSE](https://img.shields.io/github/license/poly000/bv-api-c.svg)](LICENSE)
 
 \_main和main是两个版本
 
