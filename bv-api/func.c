@@ -7,7 +7,7 @@ static int64_t tr[256] = {0};
 static char r[] = "BV1  4 1 7  ";
 static int64_t s[] = {11,10,3,8,4,6};
 static int64_t xor = INT64_C(177451812);
-static int64_t add = INT64_C(100618342136696320);
+static int64_t add = INT64_C(8728348608);
 
 void bvInitialize(void) {
 	for (uint_fast16_t i=0; i<58; i++) {
