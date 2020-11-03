@@ -27,7 +27,7 @@ inline static int64_t bvi64Pow(int64_t x, uint_fast16_t a) {
 int64_t bvDec(char x[]) {
 	register int64_t r = 0;
 	for (register uint_fast16_t i=0; i<10; i++) {
-		r += tr[(size_t)x[s[i]]*bvi64Pow(58,i)];
+		r += tr[(size_t)x[s[i]]]*bvi64Pow(58,i);
 	}
 	return (r-add)^xor;
 }
