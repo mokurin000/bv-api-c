@@ -1,5 +1,7 @@
 # BV_codec
 
+This project is no longer under maintance, please consider migrate to [abv](https://github.com/Colerar/abv), (Currently they don't provide a C-ABI interface)
+
 刚刚修复了严重的Bug…… 可能会到处结果出错的那种。
 
 __[原文地址](https://www.zhihu.com/question/381784377/answer/1099438784)__
